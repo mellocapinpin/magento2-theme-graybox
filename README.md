@@ -1,2 +1,5 @@
 # magento2-theme-graybox
-my first magento 2 theme build
+
+My first Magento 2 theme build.
+
+This theme requires magento2-theme-base
