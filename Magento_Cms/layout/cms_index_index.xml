@@ -15,6 +15,26 @@
                    name="home-section-bottom"
                    template="Magento_Cms::home-banners/home-section-bottom.phtml"
             />
+            <block class="Magento\Cms\Block\Block" name="home.block_1" template="Magento_Cms::html/home_block_wrapper.phtml">
+                <arguments>
+                    <argument name="block_id" xsi:type="string">home_block_4</argument>
+                    <argument name="css_class" xsi:type="string">some-classname</argument>
+                </arguments>
+            </block>
+            <block class="Magento\Framework\View\Element\Template" name="homepage.hero" template="Magento_Cms::html/homepage-hero.phtml">
+                <arguments>
+                    <argument name="block_id" xsi:type="string">home_block_5</argument>
+                    <argument name="phone_1" translate="true" xsi:type="string">{{config path="general/store_information/phone"}}</argument>
+                    <argument name="block_list" xsi:type="array">
+                        <item name="home-block-1" xsi:type="string">home_block_1</item>
+                        <item name="home-block-2" xsi:type="string">home_block_2</item>
+                        <item name="home-block-3" xsi:type="string">home_block_3</item>
+                        <item name="home-block-4" xsi:type="string">home_block_4</item>
+                        <item name="home-block-5" xsi:type="string">home_block_5</item>
+                        <item name="home-block-6" xsi:type="string">home_block_6</item>
+                    </argument>
+                </arguments>
+            </block>
         </referenceContainer>
         <referenceBlock name="page.main.title" remove="true" />
     </body>

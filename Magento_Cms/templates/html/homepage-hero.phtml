@@ -1,0 +1,15 @@
+<div>
+    <h3>Hello World</h3>
+    <p><?php echo $block->getBlockId(); ?></p>
+    <p><?php echo $block->getPhone1(); ?></p>
+    <ul>
+        <?php foreach ($block->getBlockList() as $value): ?>
+            <li><?php echo $value; ?></li>
+        <?php endforeach; ?>
+    </ul>
+</div>
+<div class="homepage-hero">
+    <?php foreach ($block->getBlockList() as $key => $value): ?>
+    <div class="<?php echo $key; ?>"><?php echo $block->getLayout()->createBlock('Magento\Cms\Block\Block')->setBlockId($value)->toHtml(); ?></div>
+    <?php endforeach; ?>
+</div>
